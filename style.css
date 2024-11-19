@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 220px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#add-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-button:hover {
+    background-color: #0056b3;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.column h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.delete{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.delete:hover {
+    
+    background-color: red;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    color: #333333;
+}
+
+.age {
+    font-size: 14px;
+    color: #666666;
+    padding: 5px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+
+}
+
+
+
+
+/* Изолированные стили модального окна */
+dialog {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    max-width: 90%;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+dialog input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+dialog input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+dialog .btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+dialog button {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+}
+
+dialog button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+}
+
+dialog button:not([type="submit"]) {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+dialog button:hover {
+    opacity: 0.9;
+}
+
+/* Колонки */
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.cards-container {
+    margin-top: 10px;
+}
+

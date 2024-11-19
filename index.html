@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление людей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Прописав человека в форму – добавьте его в необходимую колонку</h1>
+        <form name="form" class="form-container">
+            <input type="text" name="name" id="name" placeholder="Имя">
+            <input type="number" name="age" id="age" placeholder="Насколько старый?">
+            <button id="add-button">Добавить</button>
+        </form>
+        <div class="columns">
+            <div id="under20" class="column">
+                <h2>Люди до 25</h2>
+                <div class="cards-container"></div> 
+            </div>
+            <div id="under50" class="column">
+                <h2>Люди до 50</h2>
+                <div class="cards-container"></div> 
+            </div>
+            <div id="others" class="column">
+                <h2>Остальные</h2>
+                <div class="cards-container"></div> 
+            
+        </div>
+    </div>
+
+    <dialog>
+        <form name="change_form">
+            <input type="text" name="name" placeholder="name" >
+            <input type="number" name="age" placeholder="age" >
+            <div class="btns">
+                <button type="submit">Save changes</button>
+                <button type="button">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+    
+
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
